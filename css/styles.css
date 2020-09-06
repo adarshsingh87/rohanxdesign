@@ -1,0 +1,332 @@
+body {
+	background-color: #000;
+	font-family: 'Sen';
+	color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+	.container {
+		width: 95%;
+	}
+}
+
+.heading {
+	font-size: 55px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.subheading {
+	font-size: 18px;
+	color: #8491a0;
+}
+
+@media screen and (max-width: 960px) {
+	.heading {
+		font-size: 32px;
+	}
+	.subheading {
+		font-size: 14px;
+	}
+}
+
+/* ! ig block */
+.ig-container {
+	display: flex;
+	padding: 50px 0;
+}
+
+.ig-left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.ig-right {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.ig-right img {
+	max-width: 100%;
+}
+
+.follow-me-a {
+	padding: 10px 5px;
+	border-bottom: 1px solid #5b6876;
+	color: black;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+	.ig-container {
+		flex-direction: column-reverse;
+	}
+	.ig-left,
+	.ig-right {
+		width: 100%;
+	}
+	.follow-me-div {
+		margin-top: 20px;
+	}
+}
+
+/* ! testimonial setup */
+
+.testimonial-container {
+	margin: 100px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.testimonial-left {
+	padding-right: 30px;
+}
+
+.left-sticky {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+}
+
+.testimonial-right {
+	padding-left: 30px;
+}
+
+@media screen and (max-width: 960px) {
+	.testimonial-container {
+		display: inline;
+		margin: 50px 0;
+	}
+	.testimonial-left,
+	.testimonial-right {
+		padding: 0;
+		margin: 25px 0;
+	}
+}
+
+/* ! testimonial card  */
+.testimonial {
+	margin-bottom: 120px;
+}
+
+.testimonial-img {
+	width: 100%;
+	height: auto;
+}
+
+.testimonial-content {
+	margin-top: -4px;
+	border: 1px solid #5b6876;
+	border-top: none;
+	padding: 60px;
+}
+
+.testimonial-heading {
+	margin-bottom: 70px;
+}
+
+.testimonial-by,
+.testimonial-company {
+	font-weight: bold;
+	color: #8491a0;
+}
+
+.testimonial-by {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.testimonial-company {
+	font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+	.testimonial {
+		margin-bottom: 60px;
+	}
+	.testimonial-content {
+		padding: 20px;
+	}
+	.testimonial-heading {
+		margin-bottom: 40px;
+	}
+	.testimonial-by {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.testimonial-company {
+		font-size: 12px;
+	}
+}
+
+/* ! contact section  */
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 150px 0;
+}
+
+.contact-subheading {
+	text-align: center;
+	width: 30%;
+}
+
+.socials {
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 75px;
+}
+
+@media screen and (max-width: 960px) {
+	#contact {
+		margin: 50px 0;
+	}
+	.contact-subheading {
+		width: 100%;
+	}
+	.socials {
+		width: 100%;
+		margin-top: 15px;
+	}
+}
+
+.icon-wrapper {
+	width: 65px;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+}
+
+.icon-wrapper a img {
+	width: 50px;
+	height: 50px;
+	margin: 7.5px 0;
+}
+
+@media screen and (max-width: 960px) {
+	.icon-wrapper {
+		width: 25px;
+		height: 25px;
+	}
+	.icon-wrapper a img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.mail-div {
+	margin-top: 75px;
+	box-sizing: border-box;
+	padding: 25px 35px;
+	border: 1px solid #8491a0;
+	cursor: pointer;
+}
+
+.mail-div:hover {
+	transform: translate(0, -5px);
+	border-color: #e95d90;
+	background-color: #e95d90;
+	transition-duration: 200ms;
+}
+
+.mail-div a {
+	color: #fff;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+	.mail-div {
+		width: 100%;
+		padding: 15px 15px;
+		font-size: 14px;
+		margin-top: 20px;
+	}
+}
+
+/* ! Social media animation */
+
+.linkedin {
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #2867b2 50%, transparent 50%);
+	transition: background-position 250ms;
+}
+
+.linkedin:hover {
+	background-image: linear-gradient(to top, #2867b2 51%, transparent 50%);
+	background-position: 0 100%;
+	transition: background-position 250ms;
+}
+
+.medium {
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #57ad68 50%, transparent 50%);
+	transition: background-position 250ms;
+}
+
+.medium:hover {
+	background-image: linear-gradient(to top, #57ad68 51%, transparent 50%);
+	background-position: 0 100%;
+	transition: background-position 250ms;
+}
+
+.dribble {
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #ea4c89 50%, transparent 50%);
+	transition: background-position 250ms;
+}
+
+.dribble:hover {
+	background-image: linear-gradient(to top, #ea4c89 51%, transparent 50%);
+	background-position: 0 100%;
+	transition: background-position 250ms;
+}
+
+.instagram {
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #c13584 50%, transparent 50%);
+	transition: background-position 250ms;
+}
+
+.instagram:hover {
+	background-image: linear-gradient(to top, #c13584 51%, transparent 50%);
+	background-position: 0 100%;
+	transition: background-position 250ms;
+}
+
+.twitter {
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #1da1f2 50%, transparent 50%);
+	transition: background-position 250ms;
+}
+
+.twitter:hover {
+	background-image: linear-gradient(to top, #1da1f2 51%, transparent 50%);
+	background-position: 0 100%;
+	transition: background-position 250ms;
+}
+
+.spotify {
+	background-size: 200% 200%;
+	background-image: linear-gradient(to top, #1db954 50%, transparent 50%);
+	transition: background-position 250ms;
+}
+
+.spotify:hover {
+	background-image: linear-gradient(to top, #1db954 51%, transparent 50%);
+	background-position: 0 100%;
+	transition: background-position 250ms;
+}
