@@ -1,3 +1,7 @@
+* {
+	cursor: none;
+}
+
 body {
 	background-color: #000;
 	font-family: 'Sen';
@@ -24,6 +28,7 @@ html {
 	transition: all 0.3s ease;
 	transition-property: background, transform;
 	transform-origin: 100% 100%;
+	z-index: 1000;
 }
 
 .link-grow {
@@ -68,7 +73,6 @@ nav {
 
 .burger {
 	display: none;
-	cursor: pointer;
 }
 
 .line1 {
@@ -139,6 +143,51 @@ nav {
 .toggle .line2 {
 	width: 20px;
 	transform: rotate(45deg) translate(-2.5px, -3px);
+}
+
+/* ! splash */
+
+.splash {
+	display: flex;
+	justify-content: space-around;
+	margin: 150px 0;
+}
+
+.splash-content {
+	margin: auto 0;
+}
+
+.splash-heading {
+	font-size: 76px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+@media screen and (max-width: 960px) {
+	.splash {
+		flex-direction: column;
+		margin-top: 0;
+		margin-bottom: 75px;
+	}
+	.splash-img {
+		margin: auto;
+	}
+	.splash-img img {
+		max-height: 65vh;
+	}
+	.splash-content {
+		margin: auto;
+	}
+	.splash-heading {
+		font-size: 33px;
+		margin-bottom: 15px;
+	}
+	.line-br {
+		display: none;
+	}
+	.cursor {
+		display: none;
+	}
 }
 
 /* ! main body  */
@@ -404,7 +453,6 @@ nav {
 	box-sizing: border-box;
 	padding: 25px 35px;
 	border: 1px solid #8491a0;
-	cursor: pointer;
 }
 
 .mail-div:hover {
